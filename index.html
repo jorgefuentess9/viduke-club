@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viduke Club - Inicio</title>
+    
+    <!-- Enlace para importar la biblioteca de íconos oficiales de Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <!-- Enlace a los estilos globales y específicos -->
+    <link rel="stylesheet" href="global/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO: Contiene el logo y el menú de navegación principal -->
+    <header>
+        <div class="logo">
+            <img src="img/logoViduKeClub.png" alt="Viduke Club Logo">
+            <span>Viduke Club</span>
+        </div>
+        
+        <button id="menu-toggle">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+        
+        <nav id="menu-navegacion">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="productos.html">Películas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- BANNER 1: Bienvenida -->
+        <section id="hero">
+            <h1 id="titulo-banner">¡Bienvenidos a Viduke Club!</h1>
+            <p>El videoclub de los amantes de Java y el cine retro.</p>
+            <button id="btn-promo">Ver promo del día</button> 
+        </section>
+
+        <!-- BANNER 2: Novedades del videoclub -->
+        <section id="novedades">
+            <h2>Novedades de la Semana</h2>
+            <div class="contenedor-tarjetas">
+                <article class="tarjeta">
+                    <h3>Matrix (Edición Java)</h3>
+                    <p>Disponible en VHS</p>
+                </article>
+                
+                <article class="tarjeta">
+                    <h3>El Rey León</h3>
+                    <p>Disponible en DVD</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- BANNER 3: Opiniones de los clientes -->
+        <section id="opiniones">
+            <h2>Lo que dicen nuestros socios</h2>
+            <p class="texto-opinion">"El mejor videoclub del barrio. ¡Tienen todas las pelis!" - Jorge F.</p>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 Viduke Club - Desarrollado para 1º de DAM</p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

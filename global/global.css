@@ -1,0 +1,99 @@
+/* ==========================================================================
+   ESTILOS GLOBALES: Paleta Oscura Original (Viduke Club)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    /* Paleta oscura original: Fondo oscuro y Naranja Java Duke */
+    --color-fondo: #121214;       /* Gris casi negro para el fondo de la web */
+    --color-tarjetas: #1e1e24;    /* Gris un poco más claro para las tarjetas y bloques */
+    --color-primario: #f8981d;    /* Naranja oficial de Java Duke */
+    --color-texto: #ffffff;       /* Texto blanco */
+    --color-gris-texto: #a0a0a5;  /* Gris claro para textos secundarios */
+    --fuente-principal: 'Poppins', sans-serif;
+}
+
+/* Reinicio básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-principal);
+    line-height: 1.6;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: var(--color-tarjetas);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 5%;
+    border-bottom: 3px solid var(--color-primario); 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-texto);
+}
+
+/* Logo redondo */
+.logo img {
+    width: 50px;       
+    height: 50px;      
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
+/* MENÚ DE NAVEGACIÓN */
+#menu-navegacion ul {
+    display: flex;
+    list-style: none; 
+    gap: 20px;        
+}
+
+#menu-navegacion a {
+    color: var(--color-texto);
+    text-decoration: none; 
+    font-weight: 600;
+    padding: 6px 12px;
+    transition: 0.3s;      
+}
+
+#menu-navegacion a:hover {
+    color: var(--color-primario);
+}
+
+#menu-navegacion a.active {
+    background-color: var(--color-primario);
+    color: #000000;       /* Texto negro para contrastar con el naranja */
+    border-radius: 4px;   
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--color-texto);
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--color-tarjetas);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: var(--color-gris-texto);
+    font-size: 0.9rem;
+}

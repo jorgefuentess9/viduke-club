@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viduke Club - Contacto</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="global/global.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="img/logoViduKeClub.png" alt="Viduke Club Logo">
+            <span>Viduke Club</span>
+        </div>
+        
+        <button id="menu-toggle">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+        
+        <nav id="menu-navegacion">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Películas</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- BANNER 1: Formulario -->
+        <section id="seccion-formulario">
+            <h2>Hacete Socio de Viduke Club</h2>
+            <form id="formulario-contacto">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required>
+                <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+                <textarea id="mensaje" name="mensaje" placeholder="¿Qué película o formato estás buscando?" rows="4"></textarea>
+                <button type="submit">Enviar Solicitud</button>
+            </form>
+        </section>
+
+        <!-- BANNER 2: Sucursal -->
+        <section id="ubicacion">
+            <h2>Nuestra Sucursal</h2>
+            <p> C. Roger de Flor, 1-3, Distrito Centro, 29006 Málaga</p>
+            <p>Horario: Lunes a Sábados de 16:00 a 22:00 hs.</p>
+            <p>Teléfono: 912 345 678</p>
+        </section>
+
+        <!-- BANNER 3: Preguntas frecuentes -->
+        <section id="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="pregunta">
+                <h3>¿Qué pasa si devuelvo la película tarde?</h3>
+                <p>Se aplicará un recargo de 1€ por cada día de demora.</p>
+            </div>
+            
+            <div class="pregunta">
+                <h3>¿Tienen películas en formato 4K?</h3>
+                <p>No, en Viduke Club somos fieles al VHS y al DVD original.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Viduke Club - Desarrollado para 1º de DAM</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
